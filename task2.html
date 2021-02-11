@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>task 1</title>
+</head>
+
+<body>
+    
+<script>
+
+
+var object = { property1: { property2: "Apple", property3: 'Orange' } };
+
+var value = function(object, path){
+    for (var i=0, path=path.split('.'), len=path.length; i<len; i++){
+        object = object[path[i]];
+    };
+    return object;
+};
+
+console.log(value(object, 'property1.property2'));
+
+</script>
+
+</body>
+
+</html>
